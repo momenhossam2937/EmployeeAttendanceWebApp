@@ -25,7 +25,7 @@ namespace EmployeeAttendanceWebApp.Application.EmployeeAttendance.Commands.Creat
         {
             var employeeAttendance = _mapper.Map<Domain.Entities.EmployeeAttendance>(request);
 
-            employeeAttendance.DEVDT = ((DateTimeOffset)request.DEVDT2.ToLocalTime()).ToUnixTimeSeconds();
+            employeeAttendance.DEVDT = ((DateTimeOffset)request.DEVDT.ToLocalTime()).ToUnixTimeSeconds();
 
             employeeAttendance.SRVDT = DateTime.Now;
 

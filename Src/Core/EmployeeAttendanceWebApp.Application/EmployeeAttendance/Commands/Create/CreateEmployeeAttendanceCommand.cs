@@ -12,6 +12,6 @@ namespace EmployeeAttendanceWebApp.Application.EmployeeAttendance.Commands.Creat
         public long EVETLGUID { get; set; }
         public long DEVUID { get; set; }
         public long EMPID { get; set; }
-        public DateTime DEVDT2 { get; set; }
+        public DateTime DEVDT { get; set; }
     }
 }
